@@ -33,7 +33,7 @@ public:
     rhspNode(const std::string &node_name, bool intra_process_comms = false) :
         rclcpp_lifecycle::LifecycleNode(node_name, rclcpp::NodeOptions().use_intra_process_comms(intra_process_comms))
     {
-        this->declare_parameter("serial_port", "/dev/ttyUSB0");
+        this->declare_parameter("serial_port", "/dev/ttyUSB2");
         this->declare_parameter("kp", Kp);
         this->declare_parameter("ki", Ki);
         this->declare_parameter("kd", Kd);
