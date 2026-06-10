@@ -87,6 +87,7 @@ install(
 
 install(PROGRAMS
   src/encoder_odometry.py
+  src/config_test.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
